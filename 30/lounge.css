@@ -1,0 +1,100 @@
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.bs-cover-header {
+    text-align: center;
+}
+
+.bs-docs-nav {
+    margin-bottom: 5px;
+    background-color: #5fb4c9;
+    border-left: 0.75px solid #ecd88a;
+    border-right: 0.75px solid #ee9997;
+}
+
+.bs-docs-nav .navbar-nav > li > a {
+    color: #fafafa;
+}
+.bs-docs-nav .navbar-nav > li > a{
+    font-weight: 500;
+ }
+
+ .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+.move-left-20px {
+    margin-left: -20px;
+}
+
+
+body {
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, "ＭＳ Ｐゴシック", Helvetica, sans-serif;
+    color: #4d4c43;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* 让导航项使用 flex 布局 */
+.nav.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 调整 "最新情報" 项的顺序 */
+.nav.navbar-nav li:nth-child(1) {
+    order: 1;
+}
+
+/* 调整 "チケット" 项的顺序，使其位于 "最新情報" 右侧 */
+.nav.navbar-nav li:nth-child(2) {
+    order: 2;
+}
+
