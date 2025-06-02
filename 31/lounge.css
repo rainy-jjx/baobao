@@ -1,0 +1,240 @@
+/* 原内联样式移到此处 */
+.nav.navbar-nav li {
+    display: inline-block;
+    margin-right: 5px; /* 原 15px 减少 5px */
+}
+
+.nav.navbar-nav li.dropdown ul.dropdown-menu li {
+    display: block;
+    float: none;
+    margin-right: 0;
+}
+
+/* 图片定位样式 */
+.bs-docs-section {
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.bottom-image {
+    position: relative;
+    z-index: 1; /* 确保 1.png 在下层 */
+}
+
+.top-image {
+    position: absolute;
+    top: 50px; 
+    left: 50%; 
+    /* 原 -240px 基础上再减去 100px，总共向上移动 340px */
+    transform: 100px; 
+    z-index: 2; /* 确保 3.png 在上层 */
+}
+
+.top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.bs-docs-nav {
+    margin-bottom: 0;
+    background-color: #5fb4c9;
+    border-top: 3px solid #ecd88a;
+    border-bottom: 5px;
+    min-height: 0; 
+    /* 假设当前高度由其他元素撑开，这里直接减少 10px */
+    height:5px;
+}
+
+.navbar {
+    min-height: 10px; /* 假设原 50px，降低 40px 后为 10px */
+    border: 1px solid transparent;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar {
+    min-height: 50px;
+    border: 1px solid transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+body {
+    font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, "ＭＳ Ｐゴシック", Helvetica, sans-serif;
+    color: #4d4c43;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.bs-docs-nav::after {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 2;
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ee9997;
+}
+
+.bs-docs-nav::after {
+    box-sizing: border-box;
+}
+
+.bs-cover-header {
+    margin: 35px 0 25px 0;
+}
+
+.bs-cover-header {
+    position: relative;
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.adguard-alert-iframe{
+    width: 100%;
+    border: none;
+    position: fixed;
+    z-index: 1000;
+    top: 16px;
+    left: 0;
+    display: black;
+    margin: 0 auto;
+    color-scheme: light dark;
+    visibility: hidden;
+}
+   
+.bs-docs-nav .navbar-nav > li > a {
+    color: #fafafa;
+}
+.bs-docs-nav .navbar-nav > li > a {
+    font-weight: 500;
+}
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+
+img[src="1.png"] {
+    position: relative; /* 相对定位，基于原本位置移动 */
+    top: 95px; /* 在原 85px 基础上再下移 10px */
+}
+
+img[src="2.png"] {
+    position: relative;
+    top: -10px; 
+    /* 增加 left 属性的值，可根据实际需求调整 */
+    left: 170px; 
+    z-index: 1031; /* 确保有合适的层级 */
+    display: block; /* 确保元素显示 */
+    visibility: visible; /* 确保元素可见 */
+}
+
+.bs-docs-nav::after {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 2;
+    content: '';
+    width: 50%;
+    height: 5px;
+    background-color: #ee9997;
+}
+
+.bs-docs-nav::before {
+    position: absolute;
+    top: -3px;
+    left: 50%; /* 放置在 ::after 伪元素的旁边 */
+    z-index: 2;
+    content: '';
+    width: 50%;
+    height: 5px;
+    background-color: #f7ecb5;
+}
+.move-up {
+    position: relative;
+    top: -80px; /* 可以根据实际需求调整这个值 */
+}
+.move-right-30px {
+    position: relative;
+    left:170px; /* 向右移动 30px */
+}
+.move-up-60px {
+    position: relative;
+    top: -470px;
+}
+
+
+.move-down-20px {
+    position: relative;
+    top: 60px;
+}
+img[src="1.png"] {
+    position: relative; /* 相对定位，基于原本位置移动 */
+    top: 155px; /* 向下动 10px */
+}
+
+
+
+
